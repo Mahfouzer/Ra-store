@@ -17,6 +17,8 @@ import about from "./assets/images/about.png";
 //mock data
 import stores from "./mockData/store.json";
 import news from "./mockData/news.json";
+import About from "./components/About";
+import StoreMap from "./components/StoreMap";
 
 function App() {
   document.title = "RA sports";
@@ -65,10 +67,8 @@ function App() {
       </Header>
       <main>
         {renderSet(stores)}
-        <div className="flexed within-container about ">
-          <img src={about} style={{ width: "50%", margin: "50px 10px" }}></img>
-          <p>lol</p>
-        </div>
+        <About aboutimg={about} />
+        <StoreMap imgSrc={storeLogo} />
         {renderSet(news)}
       </main>
     </div>

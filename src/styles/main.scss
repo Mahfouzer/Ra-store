@@ -21,4 +21,34 @@ main {
     width: 75%;
     margin: 0 auto;
   }
+
+  .about {
+    &__img {
+      width: calc(50% - 20px);
+      margin: 50px 10px;
+    }
+    &__text {
+      width: calc(50% - 40px);
+      margin-left: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      //   align-items: center;
+
+      justify-content: center;
+      &__headline {
+        font-family: "Berthold", Arial, Helvetica, sans-serif;
+        font-size: 2em;
+        margin-bottom: 10px;
+      }
+      a {
+        font-weight: 600;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .primary-colored {
+    color: #22aea5;
+  }
 }
