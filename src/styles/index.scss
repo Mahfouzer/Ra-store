@@ -1,6 +1,10 @@
 //fonts
 @import "../assets/fonts/index.scss";
 
+//main
+@import "./main.scss";
+
 //Modules
 @import "./navigation.scss";
 @import "./heading.scss";
+@import "./showSet.scss";

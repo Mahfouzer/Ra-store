@@ -1,0 +1,46 @@
+[
+    {
+        "id": "1",
+        "imgSrc": "https://www9.0zz0.com/2020/03/27/16/751501843.png",
+        "logoSrc": "data",
+        "buttonName": "Let's Shopping",
+        "summary": [
+            "What started as an invention for the American worker became uniform of progress. "
+        ],
+        "findOutMore": true,
+        "path": "/test/store"
+    },
+    {
+        "id": "2",
+        "imgSrc": "https://www9.0zz0.com/2020/03/27/16/204322894.png",
+        "logoSrc": "data",
+        "buttonName": "Let's Shopping",
+        "summary": [
+            "What started as an invention for the American worker became uniform of progress. "
+        ],
+        "findOutMore": true,
+        "path": "/test/store"
+    },
+    {
+        "id": "3",
+        "imgSrc": "https://www9.0zz0.com/2020/03/27/16/318156866.png",
+        "logoSrc": "data",
+        "buttonName": "Let's Shopping",
+        "summary": [
+            "What started as an invention for the American worker became uniform of progress. "
+        ],
+        "findOutMore": true,
+        "path": "/test/store"
+    },
+    {
+        "id": "4",
+        "imgSrc": "https://www9.0zz0.com/2020/03/27/16/425439706.png",
+        "logoSrc": "data",
+        "buttonName": "Let's Shopping",
+        "summary": [
+            "What started as an invention for the American worker became uniform of progress. "
+        ],
+        "findOutMore": true,
+        "path": "/test/store"
+    }
+]
