@@ -160,18 +160,18 @@ function App() {
               <input placeholder="Your email address" type="email"></input>
             </div>
           </form>
-          <h3 className="heading">Choose your favorite brand</h3>
+          {/* <h3 className="heading">Choose your favorite brand</h3>
           <p>
             RaSport company for import & export SAE, is a leading Egyptian
             retail company, franchising and managing some of the best
             international brands, making them grow in the region.
           </p>
           <h3 className="heading">Payment methods</h3>
-
+          */}
           <img
             alt="placeholder"
             src={Logo}
-            style={{ width: "30%", margin: "20px auto", display: "block" }}
+            style={{ width: "100px", margin: "10px auto", display: "block" }}
           ></img>
           <p>Copyright © 2020 RA SPORT. All rights reserved.</p>
         </SectionIntro>

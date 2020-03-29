@@ -19,14 +19,14 @@
   &__text {
     width: 50%;
     color: white;
-    background: #c21e2e;
+    background: $red;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
     align-items: flex-start;
 
     &__headline {
-      font-family: Berthold, Arial, Helvetica, sans-serif;
+      font-family: $heading-font;
       margin-bottom: -10px;
     }
 
@@ -37,7 +37,7 @@
     }
 
     button {
-      font-family: "Grodita" !important;
+      font-family: $basic-font !important;
       background: transparent;
       color: black;
       background: white;
@@ -70,7 +70,7 @@
   &--themed {
     .showSet__text {
       color: white;
-      background-color: #22aea5;
+      background-color: $primaryColor;
 
       button {
         color: black;
@@ -80,10 +80,10 @@
     .showSet__text--reversed {
       background-color: white;
       p {
-        color: #22aea5;
+        color: $primaryColor;
       }
       button {
-        background: #22aea5;
+        background: $primaryColor;
         color: white;
       }
     }

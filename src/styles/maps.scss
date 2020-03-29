@@ -14,7 +14,7 @@
     }
   }
   .about-store-on-map {
-    font-family: "Grodita", Arial, Helvetica, sans-serif;
+    font-family: $basic-font;
     font-weight: 600;
     width: 130px;
     border-radius: 3px;
@@ -25,10 +25,10 @@
     z-index: 4000;
 
     button {
-      font-family: "Grodita" !important;
+      font-family: $basic-font !important;
       background: transparent;
       color: white;
-      background: #22aea5;
+      background: $primaryColor;
       border-radius: 4px;
       padding: 10px 20px;
       cursor: pointer;

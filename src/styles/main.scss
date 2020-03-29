@@ -39,7 +39,7 @@ footer {
     }
 
     .heading {
-      font-family: "Berthold", Arial, Helvetica, sans-serif;
+      font-family: $heading-font;
       height: auto;
       margin-bottom: 0px;
       font-size: 1.5em;
@@ -82,7 +82,7 @@ footer {
 
       justify-content: center;
       &__headline {
-        font-family: "Berthold", Arial, Helvetica, sans-serif;
+        font-family: $heading-font;
         font-size: 2em;
         margin-bottom: 20px;
         @media (max-width: 800px) {
@@ -98,7 +98,7 @@ footer {
 
   .step {
     width: 30%;
-    font-family: "Berthold", Arial, Helvetica, sans-serif;
+    font-family: $heading-font;
 
     @media (max-width: 900px) {
       width: 100%;
@@ -117,7 +117,7 @@ footer {
   }
 
   .primary-colored {
-    color: #22aea5;
+    color: $primaryColor;
   }
 
   .centered-content {
