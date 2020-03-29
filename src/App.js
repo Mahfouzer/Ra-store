@@ -45,6 +45,7 @@ function App() {
       </section>
     );
   };
+
   return (
     <div className="App">
       {/* Header and Navigation */}

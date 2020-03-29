@@ -1,20 +1,20 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 
 export default class Navigation extends Component {
   //this navigation was made for a showcase website
   //that you can scroll to a place in the page NOT navigate to others urls
 
-  // state = { w: document.documentElement.clientWidth };
+  state = { w: document.documentElement.clientWidth };
 
-  // componentDidMount() {
-  //   window.addEventListener("resize", () => {
-  //     this.setState({ w: document.documentElement.clientWidth });
-  //   });
-  // }
+  componentDidMount() {
+    window.addEventListener("resize", () => {
+      this.setState({ w: document.documentElement.clientWidth });
+    });
+  }
 
-  // componentWillUnmount() {
-  //   window.removeEventListener("resize");
-  // }
+  componentWillUnmount() {
+    window.removeEventListener("resize");
+  }
 
   static Logo = ({ logoSrc }) => (
     <li>
@@ -28,8 +28,8 @@ export default class Navigation extends Component {
     </li>
   );
 
+  //we can optmize this for colors and widths using the props of The Navigation [optional feature]
   static MenuToggler = () => (
-    //we can optmize this for colors and widths using the props of The Navigation [optional feature]
     <svg
       viewBox="0 0 100 80"
       width="30"
@@ -86,11 +86,9 @@ export default class Navigation extends Component {
   render() {
     const { menuItems, Logo, hasCart, cartOptions, isLogedIn } = this.props;
     return (
-      <>
+      <Fragment>
         <nav className="Navigation">
-          {document.documentElement.clientWidth < 1100 && (
-            <Navigation.MenuToggler />
-          )}
+          {this.state.w < 1100 && <Navigation.MenuToggler />}
           <ul className="Navigation__Menu">
             <Navigation.Logo logoSrc={Logo} />
             {hasCart && (
@@ -99,11 +97,10 @@ export default class Navigation extends Component {
                 NotificationNum={cartOptions.holding}
               />
             )}
-            {document.documentElement.clientWidth > 1100 &&
-              this.renderLeftMenu(menuItems, isLogedIn)}
+            {this.state.w > 1100 && this.renderLeftMenu(menuItems, isLogedIn)}
           </ul>
         </nav>
-      </>
+      </Fragment>
     );
   }
 }

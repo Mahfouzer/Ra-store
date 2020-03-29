@@ -2,18 +2,17 @@ import React, { Component } from "react";
 import ItemsCarousel from "react-items-carousel";
 
 export default class Carousel extends Component {
-  state = { activeItemIndex: 0 };
-  // w: document.documentElement.clientWidth
+  state = { activeItemIndex: 0, w: document.documentElement.clientWidth };
 
-  // componentDidMount() {
-  //   window.addEventListener("resize", () => {
-  //     this.setState({ w: document.documentElement.clientWidth });
-  //   });
-  // }
+  componentDidMount() {
+    window.addEventListener("resize", () => {
+      this.setState({ w: document.documentElement.clientWidth });
+    });
+  }
 
-  // componentWillUnmount() {
-  //   window.removeEventListener("resize");
-  // }
+  componentWillUnmount() {
+    window.removeEventListener("resize");
+  }
 
   render() {
     return (
@@ -33,9 +32,7 @@ export default class Carousel extends Component {
             disableSwipe={false}
             alwaysShowChevrons={false}
             numberOfCards={
-              document.documentElement.clientWidth > 900
-                ? 3
-                : Math.floor(document.documentElement.clientWidth / 300)
+              this.state.w > 900 ? 3 : Math.floor(this.state.w / 300)
             }
             slidesToScroll={1}
             outsideChevron={false}
