@@ -4,17 +4,17 @@ export default class Navigation extends Component {
   //this navigation was made for a showcase website
   //that you can scroll to a place in the page NOT navigate to others urls
 
-  state = { w: document.documentElement.clientWidth };
+  // state = { w: document.documentElement.clientWidth };
 
-  componentDidMount() {
-    window.addEventListener("resize", () => {
-      this.setState({ w: document.documentElement.clientWidth });
-    });
-  }
+  // componentDidMount() {
+  //   window.addEventListener("resize", () => {
+  //     this.setState({ w: document.documentElement.clientWidth });
+  //   });
+  // }
 
-  componentWillUnmount() {
-    window.removeEventListener("resize");
-  }
+  // componentWillUnmount() {
+  //   window.removeEventListener("resize");
+  // }
 
   static Logo = ({ logoSrc }) => (
     <li>
@@ -88,7 +88,9 @@ export default class Navigation extends Component {
     return (
       <>
         <nav className="Navigation">
-          {this.state.w < 1100 && <Navigation.MenuToggler />}
+          {document.documentElement.clientWidth < 1100 && (
+            <Navigation.MenuToggler />
+          )}
           <ul className="Navigation__Menu">
             <Navigation.Logo logoSrc={Logo} />
             {hasCart && (
@@ -97,7 +99,8 @@ export default class Navigation extends Component {
                 NotificationNum={cartOptions.holding}
               />
             )}
-            {this.state.w > 1100 && this.renderLeftMenu(menuItems, isLogedIn)}
+            {document.documentElement.clientWidth > 1100 &&
+              this.renderLeftMenu(menuItems, isLogedIn)}
           </ul>
         </nav>
       </>
