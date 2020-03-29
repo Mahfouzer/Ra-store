@@ -103,6 +103,7 @@
     width: 100%;
     height: calc(100vh - 85px);
     object-fit: cover;
+    object-position: top;
     clip-path: polygon(100% 0, 100% 63%, 0 100%, 0 37%);
     z-index: -1;
   }

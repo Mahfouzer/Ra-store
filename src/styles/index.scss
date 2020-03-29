@@ -1,11 +1,13 @@
 //fonts
 @import "../assets/fonts/index.scss";
 
-//main
+//General styles
 @import "./main.scss";
+@import "./form.scss";
 
 //Modules
 @import "./navigation.scss";
 @import "./heading.scss";
 @import "./showSet.scss";
 @import "./maps.scss";
+@import "./carousel.scss";

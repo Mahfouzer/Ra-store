@@ -29,7 +29,10 @@ export default class StoreMap extends Component {
 
   render() {
     return (
-      <div className="maps" style={{ width: "100%", height: "80vh" }}>
+      <div
+        className="maps"
+        style={{ width: "100%", height: "80vh", marginBottom: "60px" }}
+      >
         <GoogleMapReact
           bootstrapURLKeys={{ key: "AIzaSyCMo5_1hIHWRSQplmVftzOB3bi3d6SKwxM" }}
           defaultCenter={this.props.center}

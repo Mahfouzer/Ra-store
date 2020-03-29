@@ -6,12 +6,14 @@
 
   @media (max-width: 900px) {
     width: 100%;
+    margin-bottom: 1px;
   }
 
   &__img {
     width: 50%;
     height: 45vh;
     object-fit: cover;
+    object-position: top;
   }
 
   &__text {
@@ -25,6 +27,7 @@
 
     &__headline {
       font-family: Berthold, Arial, Helvetica, sans-serif;
+      margin-bottom: -10px;
     }
 
     img,
@@ -61,6 +64,28 @@
 
     &--reversed {
       background: black;
+    }
+  }
+
+  &--themed {
+    .showSet__text {
+      color: white;
+      background-color: #22aea5;
+
+      button {
+        color: black;
+        background: white;
+      }
+    }
+    .showSet__text--reversed {
+      background-color: white;
+      p {
+        color: #22aea5;
+      }
+      button {
+        background: #22aea5;
+        color: white;
+      }
     }
   }
 }

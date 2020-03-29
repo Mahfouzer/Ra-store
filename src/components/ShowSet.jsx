@@ -10,7 +10,7 @@ export default function ShowSet({
 }) {
   window.summary = summary;
   return (
-    <section className="showSet">
+    <section className={`showSet ${findOutMore ? "" : "showSet--themed"}`}>
       <div
         className={`flexed ${
           index === 2 || index === 1 ? "flexed--reversed" : ""

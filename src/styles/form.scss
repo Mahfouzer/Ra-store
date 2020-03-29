@@ -1,0 +1,54 @@
+form {
+  font-family: "Gordita", Arial, Helvetica, sans-serif;
+  margin-bottom: 40px;
+
+  div {
+    position: relative;
+    display: inline;
+    select {
+      padding: 5px;
+      border: 1px solid #dedede;
+      border-radius: 3px;
+      margin: 5px;
+      outline: none;
+      font-weight: 600;
+      width: 90px;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      appearance: none;
+    }
+    &:after {
+      position: absolute;
+      content: "\2193";
+      color: black;
+      display: inline-block;
+      right: 15px;
+      bottom: 0px;
+    }
+  }
+
+  div.email-container {
+    position: relative;
+    input {
+      padding: 15px;
+      border: 1px solid #dedede;
+      border-radius: 3px;
+      margin: 15px;
+      outline: none;
+      width: 70%;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      appearance: none;
+    }
+    &:after {
+      font-size: 0.8em;
+      font-weight: 400;
+      position: absolute;
+      content: "Sign up";
+      color: #22aea5;
+      text-decoration: underline;
+      cursor: pointer;
+      right: 34px;
+    }
+  }
+}

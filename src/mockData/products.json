@@ -1,0 +1,83 @@
+[
+    {
+        "id": "1",
+        "store": "name",
+        "storeLogo": "https://img.favpng.com/17/23/23/herzogenaurach-Levi's-logo-clothing-three-stripes-png-favpng-AK9Uwe11Kzgc9myxxFZjGtTK8.jpg",
+        "img": "https://www9.0zz0.com/2020/03/27/16/163495427.png",
+        "itemName": "Levi's t-shirt",
+        "itemType": "Men clothes",
+        "price": "20$"
+    },
+    {
+        "id": "2",
+        "store": "name",
+        "storeLogo": "https://img.favpng.com/17/23/23/herzogenaurach-Levi's-logo-clothing-three-stripes-png-favpng-AK9Uwe11Kzgc9myxxFZjGtTK8.jpg",
+        "img": "https://www9.0zz0.com/2020/03/27/16/368053602.png",
+        "itemName": "Levi's shirt",
+        "itemType": "Men clothes",
+        "price": "40$"
+    },
+    {
+        "id": "3",
+        "store": "name",
+        "storeLogo": "https://img.favpng.com/17/23/23/herzogenaurach-Levi's-logo-clothing-three-stripes-png-favpng-AK9Uwe11Kzgc9myxxFZjGtTK8.jpg",
+        "img": "https://www9.0zz0.com/2020/03/27/16/563186283.png",
+        "itemName": "Levi's shirt",
+        "itemType": "Men clothes",
+        "price": "40$"
+    },
+    {
+        "id": "4",
+        "store": "name",
+        "storeLogo": "https://img.favpng.com/17/23/23/herzogenaurach-Levi's-logo-clothing-three-stripes-png-favpng-AK9Uwe11Kzgc9myxxFZjGtTK8.jpg",
+        "img": "https://www9.0zz0.com/2020/03/27/16/887292467.png",
+        "itemName": "Levi's shirt",
+        "itemType": "Men clothes",
+        "price": "40$"
+    },
+    {
+        "id": "5",
+        "store": "name",
+        "storeLogo": "https://img.favpng.com/17/23/23/herzogenaurach-Levi's-logo-clothing-three-stripes-png-favpng-AK9Uwe11Kzgc9myxxFZjGtTK8.jpg",
+        "img": "https://www9.0zz0.com/2020/03/27/16/391678468.png",
+        "itemName": "Levi's jeans",
+        "itemType": "Men clothes",
+        "price": "80$"
+    },
+    {
+        "id": "6",
+        "store": "name",
+        "storeLogo": "https://img.favpng.com/17/23/23/herzogenaurach-Levi's-logo-clothing-three-stripes-png-favpng-AK9Uwe11Kzgc9myxxFZjGtTK8.jpg",
+        "img": "https://www9.0zz0.com/2020/03/27/16/563186283.png",
+        "itemName": "Levi's jeans",
+        "itemType": "Men clothes",
+        "price": "80$"
+    },
+    {
+        "id": "7",
+        "store": "name",
+        "storeLogo": "https://img.favpng.com/17/23/23/herzogenaurach-Levi's-logo-clothing-three-stripes-png-favpng-AK9Uwe11Kzgc9myxxFZjGtTK8.jpg",
+        "img": "https://www9.0zz0.com/2020/03/27/16/887292467.png",
+        "itemName": "Levi's shirt",
+        "itemType": "Men clothes",
+        "price": "40$"
+    },
+    {
+        "id": "8",
+        "store": "name",
+        "storeLogo": "https://img.favpng.com/17/23/23/herzogenaurach-Levi's-logo-clothing-three-stripes-png-favpng-AK9Uwe11Kzgc9myxxFZjGtTK8.jpg",
+        "img": "https://www9.0zz0.com/2020/03/27/16/163495427.png",
+        "itemName": "Levi's t-shirt",
+        "itemType": "Men clothes",
+        "price": "20$"
+    },
+    {
+        "id": "9",
+        "store": "name",
+        "storeLogo": "https://img.favpng.com/17/23/23/herzogenaurach-Levi's-logo-clothing-three-stripes-png-favpng-AK9Uwe11Kzgc9myxxFZjGtTK8.jpg",
+        "img": "https://www9.0zz0.com/2020/03/27/16/368053602.png",
+        "itemName": "Levi's shirt",
+        "itemType": "Men clothes",
+        "price": "40$"
+    }
+]
