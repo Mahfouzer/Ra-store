@@ -44,7 +44,7 @@ export default class Navigation extends Component {
 
   static Cart = ({ CartSrc, NotificationNum }) => (
     <li className="Navigation__Menu__Cart">
-      <a href="">
+      <a href="#app">
         <img
           className="Navigation__Menu__Cart__logo"
           src={CartSrc}
@@ -63,19 +63,19 @@ export default class Navigation extends Component {
     <>
       {isLogedIn ? (
         <li className="Navigation__Menu__Reg-button">
-          <a href="">Login</a>
+          <a href="#app">Login</a>
         </li>
       ) : null}
     </>
   );
 
-  renderLeftMenu(menuItems) {
+  renderLeftMenu(menuItems, isLogedIn) {
     return (
       <>
         {" "}
         {menuItems.map(menuItem => (
           <li key={menuItem}>
-            <a href="">{menuItem}</a>
+            <a href="#app">{menuItem}</a>
           </li>
         ))}
         <Navigation.RegestrationButton isLogedIn />
@@ -97,7 +97,7 @@ export default class Navigation extends Component {
                 NotificationNum={cartOptions.holding}
               />
             )}
-            {this.state.w > 1100 && this.renderLeftMenu(menuItems)}
+            {this.state.w > 1100 && this.renderLeftMenu(menuItems, isLogedIn)}
           </ul>
         </nav>
       </>

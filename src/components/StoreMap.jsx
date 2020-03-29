@@ -8,11 +8,11 @@ function Store({ imgSrc }) {
   return (
     <>
       <div className="map-icon" onClick={() => setToggled(!toggled)}>
-        <img src={imgSrc} alt="" />
+        <img src={imgSrc} alt="placeholder" />
       </div>
       {toggled && (
         <div className="about-store-on-map">
-          <img src={pin} alt="" />
+          <img src={pin} alt="placeholder" />
           <p>Tahrir Branch</p>
           <button> Let's shopping</button>
         </div>

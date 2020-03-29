@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 
 //Styles
 import "./styles/index.scss";
@@ -106,7 +106,7 @@ function App() {
             </div>
           </form>
         </SectionIntro>
-        {/* <StoreMap imgSrc={storeLogo} /> */}
+        <StoreMap imgSrc={storeLogo} />
 
         {/* Products section */}
         <SectionIntro name="products">
@@ -116,8 +116,8 @@ function App() {
         <Carousel>
           {products.map(product => (
             <div className="product" key={product.id}>
-              <img src={product.img}></img>
-              <img src={storeLogo} className="logo"></img>
+              <img alt="placeholder" src={product.img}></img>
+              <img alt="placeholder" src={storeLogo} className="logo"></img>
               <p className="product__name">{product.itemName}</p>
               <p className="product__type">{product.itemType}</p>
               <p className="product__price">{product.price}</p>
@@ -132,17 +132,17 @@ function App() {
         </SectionIntro>
         <div className="flexed within-container flexed--equaly-spaced">
           <div className="step">
-            <img src={shopImg}></img>
+            <img alt="placeholder" src={shopImg}></img>
             <p>step. 1</p>
             <p>Open any brand website</p>
           </div>
           <div className="step">
-            <img src={CartImg}></img>
+            <img alt="placeholder" src={CartImg}></img>
             <p>step. 2</p>
             <p>Add products to your cart</p>
           </div>
           <div className="step">
-            <img src={paystoreImg}></img>
+            <img alt="placeholder" src={paystoreImg}></img>
             <p>step. 3</p>
             <p>Pay and get your product</p>
           </div>
@@ -169,6 +169,7 @@ function App() {
           <h3 className="heading">Payment methods</h3>
 
           <img
+            alt="placeholder"
             src={Logo}
             style={{ width: "30%", margin: "20px auto", display: "block" }}
           ></img>
@@ -180,11 +181,3 @@ function App() {
 }
 
 export default App;
-
-//
-//  "https://www9.0zz0.com/2020/03/27/16/916075936.png"
-//  "https://www9.0zz0.com/2020/03/27/16/368053602.png"
-//  "https://www9.0zz0.com/2020/03/27/16/563186283.png"
-//     "https://www9.0zz0.com/2020/03/27/16/887292467.png"
-//     "https://www9.0zz0.com/2020/03/27/16/391678468.png"
-//

@@ -25,15 +25,17 @@ export default function ShowSet({
           {findOutMore && <img src={logoSrc} alt="store logo" />}
           {summary.map((summaryItem, i) => (
             <p
+              key={i}
               className={
-                summary.length > 1 && i === 0 && "showSet__text__headline"
+                summary.length > 1 && i === 0 ? "showSet__text__headline" : null
               }
             >
               {summaryItem}
             </p>
           ))}
           <div>
-            <button>{buttonName}</button> {findOutMore && <a>our story</a>}
+            <button>{buttonName}</button>{" "}
+            {findOutMore && <a href="#app">our story</a>}
           </div>
         </div>
       </div>

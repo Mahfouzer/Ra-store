@@ -16,11 +16,11 @@ export default function Header({ children, whoWeAre, headline, scroller }) {
         <div className="heading__scroller text-container">
           <div className="heading__scroller__img">
             <span></span>
-            <img src={scrollImg} alt="" />
+            <img src={scrollImg} alt="placeholder" />
           </div>
         </div>
       )}
-      <img className="heading__image" src={HeaderImg}></img>
+      <img alt="placeholder" className="heading__image" src={HeaderImg}></img>
     </header>
   );
 }

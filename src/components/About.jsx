@@ -3,7 +3,7 @@ import React from "react";
 export default function About({ aboutimg }) {
   return (
     <section className="flexed within-container about">
-      <img src={aboutimg} className="about__img"></img>
+      <img alt="placeholder" src={aboutimg} className="about__img"></img>
       <div className="about__text">
         <h3 className="about__text__headline">
           <span className="primary-colored">WE ARE</span> MORE THAN A BUSINESS
@@ -15,7 +15,7 @@ export default function About({ aboutimg }) {
           young, open minded, ambitious and always enthusiastic experts with
           various background.
         </p>
-        <a>Learn more &rarr;</a>
+        <a href="#app">Learn more &rarr;</a>
       </div>
     </section>
   );
