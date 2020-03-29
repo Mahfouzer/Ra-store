@@ -8,6 +8,12 @@
 
   ul {
     padding-left: 0;
+
+    @media (max-width: 1050px) {
+      & li:nth-child(n + 3) {
+        display: none;
+      }
+    }
     li {
       font-size: 14px;
     }
