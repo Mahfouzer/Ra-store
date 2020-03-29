@@ -1,4 +1,4 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 
 //Styles
 import "./styles/index.scss";
@@ -9,7 +9,6 @@ import ShowSet from "./components/ShowSet";
 import Navigation from "./components/Navigation";
 import SectionIntro from "./components/SectionIntro";
 import About from "./components/About";
-import StoreMap from "./components/StoreMap";
 import Carousel from "./components/Carousel";
 
 //images
@@ -24,6 +23,8 @@ import about from "./assets/images/about.png";
 import stores from "./mockData/store.json";
 import news from "./mockData/news.json";
 import products from "./mockData/products.json";
+
+const StoreMap = lazy(() => import("./components/StoreMap"));
 
 function App() {
   document.title = "RA sports";
@@ -107,7 +108,10 @@ function App() {
             </div>
           </form>
         </SectionIntro>
-        <StoreMap imgSrc={storeLogo} />
+
+        <Suspense fallback={<h1>Still Loading…</h1>}>
+          <StoreMap imgSrc={storeLogo} />
+        </Suspense>
 
         {/* Products section */}
         <SectionIntro name="products">

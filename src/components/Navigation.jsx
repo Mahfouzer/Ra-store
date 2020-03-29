@@ -7,9 +7,13 @@ export default class Navigation extends Component {
   state = { w: document.documentElement.clientWidth };
 
   componentDidMount() {
-    window.addEventListener("resize", () => {
-      this.setState({ w: document.documentElement.clientWidth });
-    });
+    window.addEventListener(
+      "resize",
+      () => {
+        this.setState({ w: document.documentElement.clientWidth });
+      },
+      { passive: true }
+    );
   }
 
   componentWillUnmount() {
